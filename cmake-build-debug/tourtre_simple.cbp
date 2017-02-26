@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tourtre_simple"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tourtre_simple">
+				<Option output="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/tourtre_simple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 tourtre_simple"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tourtre_simple/fast">
+				<Option output="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/tourtre_simple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 tourtre_simple/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/radu/Programming/ContourTrees/tourtre-simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/examples/simple/src/Data.cpp">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/examples/simple/src/Data.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/examples/simple/src/Global.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/examples/simple/src/Mesh.cpp">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/examples/simple/src/Mesh.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/examples/simple/src/main.cpp">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/include/ctArc.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/include/ctBranch.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/include/ctNode.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/include/tourtre.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctAlloc.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctArc.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctBranch.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctComponent.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctComponent.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctContext.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctMisc.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctNode.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctNodeMap.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctNodeMap.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctQueue.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/ctQueue.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/sglib.h">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/src/tourtre.c">
+			<Option target="tourtre_simple"/>
+		</Unit>
+		<Unit filename="/home/radu/Programming/ContourTrees/tourtre-simple/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
