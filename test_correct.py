@@ -28,10 +28,10 @@ def average_execution_time(case):
     return total_time / NO_EXECS
 
 
-#if all(map(correct, all_cases)):
-#    print ('All tested ran correctly')
-#else:
-#    print ('Failed :((')
+if all(map(correct, all_cases)):
+    print ('All tested ran correctly')
+else:
+    print ('Failed :((')
 
 
 run_times = list(map((lambda case: (case[0], average_execution_time(case[0]))), all_cases))
