@@ -15,6 +15,7 @@ CPPFLAGS = $(OPTFLAGS) -I./include $(DEFINES)
 LINKFLAGS = -lz
 
 all : simple
+	./test_correct.py
 
 objs =  src/tourtre.o     \
 	src/ctArc.o       \
