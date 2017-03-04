@@ -1,7 +1,7 @@
 #include "Mesh.h"
 
 #include <iostream>
-#include <algorithm>
+#include <parallel/algorithm>
 
 using std::cout;
 using std::endl;
@@ -30,7 +30,7 @@ void Mesh::createGraph(std::vector<size_t> & order)
 	for (uint i = 0; i < order.size(); i++) 
 		order[i] = i;
 	
-	sort( order.begin() , order.end(), AscendingOrder(data) );
+	__gnu_parallel::sort( order.begin() , order.end(), AscendingOrder(data) );
 }
 
 void Mesh::getNeighbors(size_t i, std::vector<size_t>& n) 
