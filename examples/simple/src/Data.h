@@ -31,7 +31,8 @@ struct Data
 	DataType & operator[](uint i) 
 	{ 
 		if (i < totalSize) return data[i]; 
-		else return saddles[i - totalSize];
+		std::cerr << "For fuck's sake\n";
+		return saddles[i - totalSize];
 	}
 	
 	uint convertIndex( uint i, uint j, uint k ) 

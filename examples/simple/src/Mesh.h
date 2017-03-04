@@ -15,7 +15,7 @@ class Mesh
 	Mesh(Data & d) : data(d) {}
 	
 	size_t getNeighbors(size_t i, size_t* n);
-	void createGraph(std::vector<size_t> & order);
+	size_t* createGraph();
 	uint numVerts();
 	
 	private:

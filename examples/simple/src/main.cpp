@@ -123,13 +123,11 @@ int main( int argc, char ** argv ) {
 
 	//Create mesh
 	Mesh mesh(data);
-	std::vector<size_t> totalOrder;
-	mesh.createGraph( totalOrder ); //this just sorts the vertices according to data.less()
 	
 	//init libtourtre
 	ctContext * ctx = ct_init(
 		data.totalSize, //numVertices
-		&(totalOrder.front()), //totalOrder. Take the address of the front of an stl vector, which is the same as a C array
+		mesh.createGraph(), //totalOrder. Take the address of the front of an stl vector, which is the same as a C array
 		&value,
 		&neighbors,
 		&mesh //data for callbacks. The global functions less, value and neighbors are just wrappers which call mesh->getNeighbors, etc

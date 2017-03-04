@@ -23,14 +23,15 @@ class AscendingOrder
 };
 
 
-void Mesh::createGraph(std::vector<size_t> & order) 
+size_t* Mesh::createGraph() 
 {
-	order.resize( data.totalSize );
+	size_t *order = new size_t[data.totalSize];
 	
-	for (uint i = 0; i < order.size(); i++) 
+	for (uint i = 0; i < data.totalSize; i++) 
 		order[i] = i;
 	
-	__gnu_parallel::sort( order.begin() , order.end(), AscendingOrder(data) );
+	__gnu_parallel::sort( order, order + data.totalSize, AscendingOrder(data) );
+	return order;
 }
 
 size_t Mesh::getNeighbors(size_t i, size_t *n) 
