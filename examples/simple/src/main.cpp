@@ -33,6 +33,7 @@ size_t neighbors ( size_t v, size_t * nbrs, void * d ) {
 	nbrsBuf.clear();
 	mesh->getNeighbors(v,nbrsBuf);
 	
+	#pragma omp simd
 	for (uint i = 0; i < nbrsBuf.size(); i++) {
 		nbrs[i] = nbrsBuf[i]; 
 	}

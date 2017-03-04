@@ -98,16 +98,12 @@ ct_init
    
     
     ctx->joinComps = calloc( sizeof(ctComponent*), ctx->numVerts );
-    memset(ctx->joinComps,0x0,sizeof(ctComponent*)*ctx->numVerts );
     
     ctx->splitComps = calloc( sizeof(ctComponent*), ctx->numVerts );
-    memset(ctx->splitComps,0x0,sizeof(ctComponent*)*ctx->numVerts );
 
     ctx->nextJoin = calloc( sizeof(size_t), ctx->numVerts );
-    memset(ctx->nextJoin,CT_NIL,sizeof(size_t)*ctx->numVerts );
     
     ctx->nextSplit = calloc( sizeof(size_t), ctx->numVerts );
-    memset(ctx->nextSplit,CT_NIL,sizeof(size_t)*ctx->numVerts );
 
     ctx->arcMap = 0;
     ctx->arcMapOwned = 1;
