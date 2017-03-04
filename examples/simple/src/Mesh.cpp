@@ -33,67 +33,69 @@ void Mesh::createGraph(std::vector<size_t> & order)
 	__gnu_parallel::sort( order.begin() , order.end(), AscendingOrder(data) );
 }
 
-void Mesh::getNeighbors(size_t i, std::vector<size_t>& n) 
+size_t Mesh::getNeighbors(size_t i, size_t *n) 
 {
+	size_t curr_idx = 0;
 	uint x,y,z;
 	data.convertIndex( i, x, y, z );
 	if (x == 0xffffffff || y == 0xffffffff || z == 0xffffffff)
-		return;
+		return 0;
 	x--;
 	if (x < data.size[0]) {
-		n.push_back( data.convertIndex(x, y, z) );
+		n[curr_idx++] = data.convertIndex(x, y, z); 
 	}
 	x += 2;
 	if (x < data.size[0]) {
-		n.push_back( data.convertIndex(x, y, z) );
+		n[curr_idx++] = data.convertIndex(x, y, z);
 	}
 	x--;
 
 	y--;
 	if (y < data.size[1]) {
-		n.push_back( data.convertIndex(x, y, z) );
+		n[curr_idx++] = data.convertIndex(x, y, z);
 	}
 	y += 2;
 	if (y < data.size[1]) {
-		n.push_back( data.convertIndex(x, y, z) );
+		n[curr_idx++] = data.convertIndex(x, y, z);
 	}
 	y--;
 
 	z--;
 	if (z < data.size[2]) {
-		n.push_back( data.convertIndex(x, y, z) );
+		n[curr_idx++] = data.convertIndex(x, y, z);
 	}
 	z += 2;
 	if (z < data.size[2]) {
-		n.push_back( data.convertIndex(x, y, z) );
+		n[curr_idx++] = data.convertIndex(x, y, z);
 	}
 	z--;
 	if ( ((x+y+z) & 1) != ODD_TET_PARITY ) {
-		find18Neighbors(x,y,z,n);
+		find18Neighbors(x, y, z, n, curr_idx);
 	}
+	return curr_idx;
 }
 
-void Mesh::find18Neighbors( uint x, uint y, uint z, std::vector< size_t > & neighbors) 
+void Mesh::find18Neighbors( uint x, uint y, uint z, size_t* neighbors, size_t &curr_idx) 
 {
 	x--;
 	if (x < data.size[0]) {
 		y--;
 		if (y < data.size[1]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		y += 2;
 		if (y < data.size[1]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		y--;
 
 		z--;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z += 2;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z--;
 	}
@@ -102,21 +104,21 @@ void Mesh::find18Neighbors( uint x, uint y, uint z, std::vector< size_t > & neig
 	if (x < data.size[0]) {
 		y--;
 		if (y < data.size[1]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		y += 2;
 		if (y < data.size[1]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		y--;
 
 		z--;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z += 2;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z--;
 	}
@@ -126,11 +128,11 @@ void Mesh::find18Neighbors( uint x, uint y, uint z, std::vector< size_t > & neig
 	if (y < data.size[1]) {
 		z--;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z += 2;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z--;
 	}
@@ -139,11 +141,11 @@ void Mesh::find18Neighbors( uint x, uint y, uint z, std::vector< size_t > & neig
 	if (y < data.size[1]) {
 		z--;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z += 2;
 		if (z < data.size[2]) {
-			neighbors.push_back( data.convertIndex(x, y, z) );
+			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
 		z--;
 	}

@@ -13,8 +13,8 @@
 bool Data::less( uint a, uint b ) 
 {
 	//use overloaded [] operator to access saddles
-	if (compareEqual( (*this)[a],(*this)[b])) return a < b;
-	else return compareLess((*this)[a],(*this)[b]);
+	if (data[a] == data[b]) return a < b;
+	return data[a] < data[b];
 }
 
 bool Data::greater( uint a, uint b ) 

@@ -165,8 +165,14 @@ ctArc * ct_sweepAndMerge( ctContext * ctx )
 {
 ct_checkContext(ctx);
 {
+#pragma omp parallel sections
+{
+#pragma omp section
     ct_joinSweep(ctx);
+
+#pragma omp section
     ct_splitSweep(ctx);
+}
     ct_augment( ctx );
     return ctx->tree=ct_merge( ctx );
 }
