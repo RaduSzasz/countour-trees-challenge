@@ -146,6 +146,5 @@ void Mesh::find18Neighbors( uint x, uint y, uint z, size_t* neighbors, size_t &c
 		if (z < data.size[2]) {
 			neighbors[curr_idx++] = data.convertIndex(x, y, z);
 		}
-		z--;
 	}
 }
