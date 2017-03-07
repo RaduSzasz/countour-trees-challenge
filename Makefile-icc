@@ -1,10 +1,10 @@
-CC = /vol/intel/parallel_studio_xe_2017.0.035/bin/icc
-CCPP = /vol/intel/parallel_studio_xe_2017.0.035/bin/icpc
+CC = /opt/intel/bin/icc
+CCPP = /opt/intel/bin/icpc
 
 #preprocessor defines
 DEFINES = -DUSE_ZLIB
 
-OPTFLAGS = -Ofast -qopt-report
+OPTFLAGS = -Ofast -qopt-report -fopenmp -lpthread
 
 #CFLAGS = -ansi -pedantic -Wall -Werror -fPIC -O2
 #CFLAGS = -ansi -pedantic -Wall -fPIC -O2
