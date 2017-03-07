@@ -39,8 +39,6 @@ size_t Mesh::getNeighbors(size_t i, size_t *n)
 	size_t curr_idx = 0;
 	uint x,y,z;
 	data.convertIndex( i, x, y, z );
-	if (x == 0xffffffff || y == 0xffffffff || z == 0xffffffff)
-		return 0;
 	x--;
 	if (x < data.size[0]) {
 		n[curr_idx++] = data.convertIndex(x, y, z); 
